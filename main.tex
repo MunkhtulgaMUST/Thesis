@@ -1,0 +1,90 @@
+\documentclass[12pt,a4paper]{report}
+
+% ------------------------
+% Packages
+% ------------------------
+\usepackage{fontspec}
+\setmainfont{Times New Roman} % or Arial
+
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]
+{\normalfont\huge\bfseries}
+{\thechapter}{1em}{}
+
+% \geometry{margin=1in}
+% \onehalfspacing
+
+% ------------------------
+% Document
+% ------------------------
+\begin{document}
+
+% ------------------------
+% Title Page
+% ------------------------
+\begin{titlepage}
+    \centering
+    {\Large University Name \par}
+    \vspace{1cm}
+    {\Large Department of Computer Science \par}
+    \vspace{2cm}
+    {\huge\bfseries Improving Efficiency of NP-Hard Algorithms\par}
+    \vspace{1.5cm}
+    {\Large Bachelor's Thesis\par}
+    \vspace{2cm}
+    {\Large Author: Your Name\par}
+    {\Large Supervisor: Supervisor Name\par}
+    \vfill
+    {\Large \today\par}
+\end{titlepage}
+
+% ------------------------
+% Abstract
+% ------------------------
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+Brief summary of the problem, methods, and results.
+
+% ------------------------
+% Table of Contents
+% ------------------------
+\tableofcontents
+\clearpage
+
+% ------------------------
+% Chapters
+% ------------------------
+\include{chapters/introduction}
+
+% \chapter{Background}
+% Complexity theory, SAT, 3-SAT, TSP.
+
+% \chapter{Related Work}
+% Existing algorithms and prior research.
+
+% \chapter{Problem Definition}
+% Formal definitions and evaluation criteria.
+
+% \chapter{Proposed Methods}
+% Your algorithmic improvements.
+
+% \chapter{Experimental Evaluation}
+% Benchmarks, results, and analysis.
+
+% \chapter{Conclusion and Future Work}
+% Summary and future directions.
+
+% ------------------------
+% References
+% ------------------------
+\bibliographystyle{plain}
+\bibliography{references}
+
+% ------------------------
+% Appendix
+% ------------------------
+\appendix
+\chapter{Additional Proofs}
+Optional appendix content.
+
+\end{document}
