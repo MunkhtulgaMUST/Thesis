@@ -11,6 +11,8 @@
 {\normalfont\huge\bfseries}
 {\thechapter}{1em}{}
 
+
+\usepackage[hidelinks]{hyperref}
 % \geometry{margin=1in}
 % \onehalfspacing
 
@@ -22,39 +24,36 @@
 % ------------------------
 % Title Page
 % ------------------------
-\begin{titlepage}
-    \centering
-    {\Large University Name \par}
-    \vspace{1cm}
-    {\Large Department of Computer Science \par}
-    \vspace{2cm}
-    {\huge\bfseries Improving Efficiency of NP-Hard Algorithms\par}
-    \vspace{1.5cm}
-    {\Large Bachelor's Thesis\par}
-    \vspace{2cm}
-    {\Large Author: Your Name\par}
-    {\Large Supervisor: Supervisor Name\par}
-    \vfill
-    {\Large \today\par}
-\end{titlepage}
-
-% ------------------------
-% Abstract
-% ------------------------
-\chapter*{Abstract}
-\addcontentsline{toc}{chapter}{Abstract}
-Brief summary of the problem, methods, and results.
+% \begin{titlepage}
+%     \centering
+%     {\Large University Name \par}
+%     \vspace{1cm}
+%     {\Large Department of Computer Science \par}
+%     \vspace{2cm}
+%     {\huge\bfseries Improving Efficiency of NP-Hard Algorithms\par}
+%     \vspace{1.5cm}
+%     {\Large Bachelor's Thesis\par}
+%     \vspace{2cm}
+%     {\Large Author: Your Name\par}
+%     {\Large Supervisor: Supervisor Name\par}
+%     \vfill
+%     {\Large \today\par}
+% \end{titlepage}
 
 % ------------------------
 % Table of Contents
 % ------------------------
+\renewcommand{\contentsname}{ГАРЧИГ}
 \tableofcontents
 \clearpage
+% \tableofcontents
+% \clearpage
 
 % ------------------------
 % Chapters
 % ------------------------
 \include{chapters/introduction}
+\include{chapters/theoritical_background}
 
 % \chapter{Background}
 % Complexity theory, SAT, 3-SAT, TSP.
@@ -84,7 +83,7 @@ Brief summary of the problem, methods, and results.
 % Appendix
 % ------------------------
 \appendix
-\chapter{Additional Proofs}
-Optional appendix content.
+% \chapter{Additional Proofs}
+% Optional appendix content.
 
 \end{document}
